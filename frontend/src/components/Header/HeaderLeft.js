@@ -7,6 +7,7 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem;
+  min-width: 200px;
 `;
 
 const HeaderLeft = () => {

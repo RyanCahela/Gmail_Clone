@@ -7,7 +7,6 @@ import { greyMedium } from "../../utilites/Colors";
 
 const Container = styled.header`
   display: flex;
-  justify-content: space-between;
   padding-block-start: 0.5rem;
   color: ${greyMedium};
 `;

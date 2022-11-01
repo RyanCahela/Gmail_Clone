@@ -6,14 +6,15 @@ import TuneIcon from "@mui/icons-material/Tune";
 import { greyMedium, greyLight } from "../../utilites/Colors";
 
 const Container = styled.form`
-  flex-basis: 50%;
-  display: flex;
   align-items: center;
-  gap: 1rem;
   background-color: ${greyLight};
+  color: ${greyMedium};
+  display: flex;
+  flex-basis: 50%;
+  gap: 1rem;
+  max-width: 720px;
   padding-inline: 1em;
   padding-block: 0.5em;
-  color: ${greyMedium};
 `;
 
 const StyledInput = styled.input`

@@ -7,7 +7,7 @@ import SidebarLabels from "./SidebarLabels";
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  width: 200px;
   outline: 1px solid red;
   overflow: auto;
 `;
