@@ -2,11 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import AppsIcon from "@mui/icons-material/Apps";
 import NotificationsIcon from "@mui/icons-material/Notifications";
+import { IconButton } from "@mui/material";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 
 const Container = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 `;
 
 const ProfilePicture = styled.div`
@@ -19,8 +22,15 @@ const ProfilePicture = styled.div`
 const HeaderRight = () => {
   return (
     <Container>
-      <AppsIcon />
-      <NotificationsIcon />
+      <IconButton>
+        <HelpOutlineIcon />
+      </IconButton>
+      <IconButton>
+        <SettingsOutlinedIcon />
+      </IconButton>
+      <IconButton>
+        <AppsIcon />
+      </IconButton>
       <ProfilePicture />
     </Container>
   );

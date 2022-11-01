@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useId } from "react";
 import styled from "styled-components";
+import { IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
-import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
+import TuneIcon from "@mui/icons-material/Tune";
 import { greyMedium, greyLight } from "../../utilites/Colors";
 
 const Container = styled.form`
@@ -35,8 +36,15 @@ const FormSubmitButton = styled.button`
   visibility: hidden;
 `;
 
+const SearchIconLabel = styled.label`
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
 const HeaderMiddle = () => {
   const [searchValue, setSearchValue] = useState("");
+  const searchInputId = useId();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -45,16 +53,20 @@ const HeaderMiddle = () => {
 
   return (
     <Container onSubmit={(e) => handleSubmit(e)}>
-      <SearchIcon />
+      <SearchIconLabel htmlFor={searchInputId}>
+        <SearchIcon />
+      </SearchIconLabel>
       <StyledInput
         type="text"
         placeholder="Search Mail"
         value={searchValue}
-        defaultValue={""}
         onChange={(e) => setSearchValue(e.target.value)}
+        id={searchInputId}
       />
       <FormSubmitButton type="submit">Search</FormSubmitButton>
-      <ArrowDropDownIcon />
+      <IconButton>
+        <TuneIcon />
+      </IconButton>
     </Container>
   );
 };
