@@ -1,13 +1,17 @@
 import React from "react";
 import "./App.css";
-import Header from "./components/Header/Header.js";
+import HeaderIndex from "./components/Header/HeaderIndex.js";
+import styled from "styled-components";
+
+const Container = styled.div`
+  padding-inline: 1.5rem;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <h1>Let's build gmail</h1>
-    </div>
+    <Container>
+      <HeaderIndex />
+    </Container>
   );
 }
 
