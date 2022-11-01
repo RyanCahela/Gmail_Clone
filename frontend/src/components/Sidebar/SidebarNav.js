@@ -67,7 +67,8 @@ const StyledList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-  padding-inline: 1em;
+  padding-inline-end: 1em;
+  padding-inline-start: 0;
 `;
 
 const SidebarNav = () => {

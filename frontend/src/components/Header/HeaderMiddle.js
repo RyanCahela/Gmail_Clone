@@ -3,12 +3,12 @@ import styled from "styled-components";
 import { IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import TuneIcon from "@mui/icons-material/Tune";
-import { greyMedium, greyLight } from "../../utilites/Colors";
+import { GREY_MEDIUM, GREY_LIGHT } from "../../utilites/Colors";
 
 const Container = styled.form`
   align-items: center;
-  background-color: ${greyLight};
-  color: ${greyMedium};
+  background-color: ${GREY_LIGHT};
+  color: ${GREY_MEDIUM};
   display: flex;
   flex-basis: 50%;
   gap: 1rem;
@@ -21,10 +21,10 @@ const StyledInput = styled.input`
   flex-grow: 1;
   border: none;
   background-color: transparent;
-  color: ${greyMedium};
+  color: ${GREY_MEDIUM};
 
   &::placeholder {
-    color: ${greyMedium};
+    color: ${GREY_MEDIUM};
   }
 
   &:focus,

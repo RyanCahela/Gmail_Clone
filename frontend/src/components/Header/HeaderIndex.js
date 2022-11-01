@@ -3,12 +3,12 @@ import HeaderLeft from "./HeaderLeft";
 import HeaderMiddle from "./HeaderMiddle";
 import HeaderRight from "./HeaderRight";
 import styled from "styled-components";
-import { greyMedium } from "../../utilites/Colors";
+import { GREY_MEDIUM } from "../../utilites/Colors";
 
 const Container = styled.header`
   display: flex;
   padding-block-start: 0.5rem;
-  color: ${greyMedium};
+  color: ${GREY_MEDIUM};
 `;
 const Header = () => {
   return (

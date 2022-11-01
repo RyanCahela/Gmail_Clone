@@ -2,14 +2,14 @@ import React from "react";
 
 import CreateOutlinedIcon from "@mui/icons-material/CreateOutlined";
 import styled from "styled-components";
-import { blueLight } from "../../utilites/Colors";
+import { BLUE_LIGHT } from "../../utilites/Colors";
 
 const Container = styled.div`
   display: flex;
 `;
 
 const ComposeButton = styled.button`
-  background-color: ${blueLight};
+  background-color: ${BLUE_LIGHT};
   padding-block: 1em;
   padding-inline: 1.5em;
   display: flex;
