@@ -8,8 +8,9 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 const Container = styled.div`
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 0.5rem;
-  margin-inline-start: auto;
+  padding-inline-end: 0.75rem;
 `;
 
 const ProfilePicture = styled.div`

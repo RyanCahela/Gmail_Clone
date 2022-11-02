@@ -6,6 +6,7 @@ import { BLUE_LIGHT } from "../../utilites/Colors";
 
 const Container = styled.div`
   display: flex;
+  padding-inline-start: 0.5rem;
 `;
 
 const ComposeButton = styled.button`

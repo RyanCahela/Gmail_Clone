@@ -1,7 +1,8 @@
 import React from "react";
+import styled from "styled-components";
 
 const SidebarLabels = () => {
-  return <div>SidebarLabels</div>;
+  return <div></div>;
 };
 
 export default SidebarLabels;

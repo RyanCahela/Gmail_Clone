@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import SidebarNavItem from "./SidebarNavItem";
+import { List, ListItem, ListItemIcon } from "@mui/material";
 
 //icon imports
 import InboxIcon from "@mui/icons-material/Inbox";
@@ -59,14 +60,15 @@ const navItems = [
 ];
 
 const Container = styled.div`
-  outline: 1px solid green;
+  /* outline: 1px solid green; */
 `;
 
 const StyledList = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.5em;
+  font-size: 0.875rem;
+  gap: 0.25rem;
   padding-inline-end: 1em;
   padding-inline-start: 0;
 `;
