@@ -17,7 +17,6 @@ const StyledListItem = styled.li`
   &:hover {
     cursor: pointer;
     background-color: ${BLUE_GREY_VERY_LIGHT};
-    font-weight: 700;
   }
 `;
 
@@ -29,15 +28,22 @@ const LabelDisplay = styled.div`
   /* font-weight: ${(props) => (props.isFontBold ? "700" : "500")}; */
   font-weight: inherit;
 `;
+const StyledIconContainer = styled.div`
+  margin-inline-start: 0.5rem;
+`;
 
-const SidebarNavItem = ({ label, Icon, quantity, isFontBold = false }) => {
-  const StyledIcon = styled(Icon)`
-    margin-inline-start: 0.5rem;
-  `;
-
+const SidebarNavItem = ({
+  label,
+  Icon,
+  quantity = null,
+  isFontBold = false,
+  onClick,
+}) => {
   return (
-    <StyledListItem>
-      <StyledIcon fontSize={"small"} />
+    <StyledListItem onClick={onClick}>
+      <StyledIconContainer>
+        <Icon fontSize={"small"} />
+      </StyledIconContainer>
       <LabelDisplay style={isFontBold ? { fontWeight: "700" } : {}}>
         {label}
       </LabelDisplay>
