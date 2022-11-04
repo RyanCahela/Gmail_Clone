@@ -18,6 +18,7 @@ const Container = styled.li`
   border-top-right-radius: var(--border-radius);
   border-bottom-right-radius: var(--border-radius);
 
+  //hides options button unless list item is hovered;
   & > [data-label-options-button] {
     visibility: hidden;
   }
