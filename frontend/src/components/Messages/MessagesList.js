@@ -10,6 +10,9 @@ import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 
 const Container = styled.div`
+  overflow-y: auto;
+  height: 85vh;
+
   &:hover {
     cursor: pointer;
   }
@@ -18,6 +21,34 @@ const Container = styled.div`
 const MessagesList = () => {
   return (
     <Container>
+      <MessagesListItem sender="short name" />
+      <MessagesListItem sender="very very very long name" />
+      <MessagesListItem sender="Ryan Cahela" />
+      <MessagesListItem sender="Ryan" />
+      <MessagesListItem sender="short name" />
+      <MessagesListItem sender="very very very long name" />
+      <MessagesListItem sender="Ryan Cahela" />
+      <MessagesListItem sender="Ryan" />
+      <MessagesListItem sender="short name" />
+      <MessagesListItem sender="very very very long name" />
+      <MessagesListItem sender="Ryan Cahela" />
+      <MessagesListItem sender="Ryan" />
+      <MessagesListItem sender="short name" />
+      <MessagesListItem sender="very very very long name" />
+      <MessagesListItem sender="Ryan Cahela" />
+      <MessagesListItem sender="Ryan" />
+      <MessagesListItem sender="short name" />
+      <MessagesListItem sender="very very very long name" />
+      <MessagesListItem sender="Ryan Cahela" />
+      <MessagesListItem sender="Ryan" />
+      <MessagesListItem sender="short name" />
+      <MessagesListItem sender="very very very long name" />
+      <MessagesListItem sender="Ryan Cahela" />
+      <MessagesListItem sender="Ryan" />
+      <MessagesListItem sender="short name" />
+      <MessagesListItem sender="very very very long name" />
+      <MessagesListItem sender="Ryan Cahela" />
+      <MessagesListItem sender="Ryan" />
       <MessagesListItem sender="short name" />
       <MessagesListItem sender="very very very long name" />
       <MessagesListItem sender="Ryan Cahela" />

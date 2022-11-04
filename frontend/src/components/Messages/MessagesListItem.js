@@ -5,22 +5,27 @@ import { IconButton, Typography, Grid } from "@mui/material";
 import CheckBoxOutlineBlankIcon from "@mui/icons-material/CheckBoxOutlineBlank";
 import StarOutlineIcon from "@mui/icons-material/StarOutline";
 import LabelOutlinedIcon from "@mui/icons-material/LabelOutlined";
-import ArchiveOutlinedIcon from "@mui/icons-material/ArchiveOutlined";
-import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
-import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
-import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
-import { GREY_MEDIUM } from "../../utilites/Colors";
+import MessageQuickOptions from "./MessageQuickOptions";
+import { GREY_LIGHT, GREY_MEDIUM } from "../../utilites/Colors";
 import { InsertChartOutlinedTwoTone } from "@mui/icons-material";
 
 const Container = styled.ul`
   display: flex;
   align-items: center;
   padding-inline: 0.5em;
+  font-size: 0.875rem;
   font-weight: 700;
+  position: relative;
 
   &:hover {
-    box-shadow: inset 0 0 1px ${GREY_MEDIUM}, inset 0 -1px 1px ${GREY_MEDIUM},
-      inset 0 1px 1px ${GREY_MEDIUM};
+    box-shadow: inset 1px 0 0 #dadce0, inset -1px 0 0 #dadce0,
+      0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+
+    color: black;
+
+    & > div {
+      display: block;
+    }
   }
 `;
 
@@ -28,11 +33,13 @@ const SubjectLine = MUIStyled(Typography)({
   flexBasis: "40ch",
   marginInlineStart: "auto",
   fontWeight: "inherit",
+  fontSize: "inherit",
 });
 
 const Sender = MUIStyled(Typography)({
   flexBasis: "15ch",
   fontWeight: "inherit",
+  fontSize: "inherit",
 });
 
 const TimeRecieved = styled.div`
@@ -43,7 +50,7 @@ const MessagesListItem = ({ sender }) => {
   return (
     <Container>
       <IconButton>
-        <CheckBoxOutlineBlankIcon fontSize="small" />
+        <CheckBoxOutlineBlankIcon fontSize="small" sx={{ color: "inherit" }} />
       </IconButton>
       <IconButton>
         <StarOutlineIcon fontSize="small" />
@@ -58,6 +65,7 @@ const MessagesListItem = ({ sender }) => {
         Subject Line
       </SubjectLine>
       <TimeRecieved>11:32AM</TimeRecieved>
+      <MessageQuickOptions />
     </Container>
   );
 };

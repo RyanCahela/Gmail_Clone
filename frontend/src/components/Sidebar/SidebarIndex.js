@@ -13,7 +13,7 @@ const Container = styled.div`
 `;
 
 const ScrollableList = styled.div`
-  max-height: 90vh;
+  max-height: 70vh;
   overflow-y: auto;
 `;
 
