@@ -10,15 +10,21 @@ const Container = styled.div`
   background-color: ${GREY_VERY_LIGHT};
   flex-direction: column;
   /* outline: 1px solid red; */
-  overflow: auto;
+`;
+
+const ScrollableList = styled.div`
+  max-height: 90vh;
+  overflow-y: auto;
 `;
 
 const SidebarIndex = () => {
   return (
     <Container>
       <SidebarCompose />
-      <SidebarNav />
-      <SidebarLabels />
+      <ScrollableList>
+        <SidebarNav />
+        <SidebarLabels />
+      </ScrollableList>
     </Container>
   );
 };

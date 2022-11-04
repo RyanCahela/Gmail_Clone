@@ -9,7 +9,11 @@ import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
 
-const Container = styled.div``;
+const Container = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`;
 
 const MessagesList = () => {
   return (

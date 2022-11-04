@@ -9,20 +9,30 @@ import ArchiveOutlinedIcon from "@mui/icons-material/ArchiveOutlined";
 import DeleteOutlinedIcon from "@mui/icons-material/DeleteOutlined";
 import DraftsOutlinedIcon from "@mui/icons-material/DraftsOutlined";
 import AccessTimeOutlinedIcon from "@mui/icons-material/AccessTimeOutlined";
+import { GREY_MEDIUM } from "../../utilites/Colors";
+import { InsertChartOutlinedTwoTone } from "@mui/icons-material";
 
 const Container = styled.ul`
   display: flex;
   align-items: center;
-  padding: 0;
+  padding-inline: 0.5em;
+  font-weight: 700;
+
+  &:hover {
+    box-shadow: inset 0 0 1px ${GREY_MEDIUM}, inset 0 -1px 1px ${GREY_MEDIUM},
+      inset 0 1px 1px ${GREY_MEDIUM};
+  }
 `;
 
 const SubjectLine = MUIStyled(Typography)({
   flexBasis: "40ch",
   marginInlineStart: "auto",
+  fontWeight: "inherit",
 });
 
 const Sender = MUIStyled(Typography)({
   flexBasis: "15ch",
+  fontWeight: "inherit",
 });
 
 const TimeRecieved = styled.div`
