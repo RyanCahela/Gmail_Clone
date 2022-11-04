@@ -23,7 +23,7 @@ const Container = styled.ul`
 
     color: black;
 
-    & > div {
+    & > .message-quick-options {
       display: block;
     }
   }

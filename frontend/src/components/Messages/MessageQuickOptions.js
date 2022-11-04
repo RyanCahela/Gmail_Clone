@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const MessageQuickOptions = () => {
   return (
-    <Container>
+    <Container className="message-quick-options">
       <IconButton>
         <ArchiveOutlinedIcon fontSize="small" />
       </IconButton>
